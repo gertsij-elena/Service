@@ -250,3 +250,11 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/Solution/Solution.sln
+/Solution/Solution/Content/PagedList.css
+/Solution/Solution/Properties
+/Solution/Solution/Views/Shared/Error.cshtml
+/Solution/Solution/ApplicationInsights.config
+/Solution/Solution/packages.config
+/Solution/Solution/Project_Readme.html
+/Solution/Solution/Solution.csproj
