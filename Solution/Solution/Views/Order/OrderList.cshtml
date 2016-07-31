@@ -4,13 +4,9 @@
 <script src="~/Scripts/MyScripts/GetOrder.js"></script>         
     } 
     <div ng-app="OrderApp">
-                    <input type="text" ng-model="searchLastName" placeholder="Фамилия"  />
-                    @*<input type="text" ng-model="dateFrom" placeholder="date1"/>
-                        <input type="text" ng-model="dateTo" placeholder="date2" />*@
-            <input type="text" ng-model="phone" placeholder="Номер телефона" />
-            @*<input type="text" ng-model="price" placeholder="price"/>
-                <input type="checkbox" name="chek" />*@
-            <input type="submit" value="Найти" />
+        <input type="text" ng-model="searchLastName" placeholder="Фамилия"  />        
+        <input type="text" ng-model="phone" placeholder="Номер телефона" />
+            
             <div ng-controller="OrderController">
                 <table class="table">
                     <thead style="background-color:gray;">
@@ -26,7 +22,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @*<tr ng-repeat="or in orders|filter:price|filter:searchLastName|dateFilter:dateFrom">*@
+                      
                         <tr ng-repeat="or in orders|filter:phone|filter:searchLastName">
                             <td>{{or.FirstName}}</td>
                             <td>{{or.LastName}}</td>
